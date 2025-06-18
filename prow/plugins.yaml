@@ -28,3 +28,12 @@ plugins:
   - trigger
   - wip
   - config-updater
+
+approve:
+  repos:
+    - KiranItagi666/k8s-prow-guide
+
+lgtm:
+  repos:
+    - KiranItagi666/k8s-prow-guide
+

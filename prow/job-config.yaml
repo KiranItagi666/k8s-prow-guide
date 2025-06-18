@@ -1,0 +1,15 @@
+# prow/job-config.yaml
+
+presubmits:
+  KiranItagi666/k8s-prow-guide:
+    - name: sample-presubmit
+      decorate: true
+      always_run: true
+      spec:
+        containers:
+          - image: alpine:3.18
+            command:
+              - /bin/sh
+              - -c
+              - 'echo "Hello from Prow!"; exit 0'
+

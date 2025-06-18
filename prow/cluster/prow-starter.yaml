@@ -60,6 +60,7 @@ spec:
       labels:
         app: hook
     spec:
+      serviceAccountName: prow
       terminationGracePeriodSeconds: 180
       containers:
       - name: hook
@@ -141,6 +142,8 @@ spec:
       app: plank
   replicas: 1
   template:
+    spec:
+      serviceAccount: prow
     metadata:
       labels:
         app: plank
@@ -191,6 +194,7 @@ spec:
       labels:
         app: sinker
     spec:
+      serviceAccountName: prow
       containers:
       - name: sinker
         image: gcr.io/k8s-prow/sinker:v20190405-651ad49e6
@@ -231,6 +235,7 @@ spec:
       labels:
         app: deck
     spec:
+      serviceAccountName: prow
       terminationGracePeriodSeconds: 30
       containers:
       - name: deck
@@ -292,6 +297,7 @@ spec:
       labels:
         app: horologium
     spec:
+      serviceAccountName: prow
       terminationGracePeriodSeconds: 30
       containers:
       - name: horologium
@@ -333,6 +339,7 @@ spec:
       labels:
         app: tide
     spec:
+      serviceAccountName: prow
       containers:
       - name: tide
         image: gcr.io/k8s-prow/tide:v20190405-651ad49e6
