@@ -11,7 +11,7 @@ config_updater:
 
 
 plugins:
-  sanster23/k8s-prow-guide:
+  KiranItagi666/k8s-prow-guide:
   - approve
   - assign
   - cat

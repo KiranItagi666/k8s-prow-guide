@@ -33,7 +33,7 @@ tide:
   - orgs:
     - sanster23
   - repos:
-    - sanster23/k8s-prow-guide
+    - KiranItagi666/k8s-prow-guide
     labels:
     - lgtm
     - approved
